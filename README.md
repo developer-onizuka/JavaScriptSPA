@@ -23,7 +23,17 @@ npm install morgan
 npm install yargs
 ```
 
-# 2. Create server.js
+Test Hello world Node.js
+```
+cat <<EOF >hello.js
+console.log('hello world')
+EOF
+
+node hello.js
+```
+
+# 2. Create server.js for a business logic
+Export Express for web server, Morgan for logging. Listen on the port you specify.
 ```
 vi JavaScript/server.js
 ```
@@ -57,7 +67,7 @@ console.log(`Listening on port ${port}...`);
 ```
 
 # 3. Create UI
-Create two files, **index.html and ui.js**.
+Create two files, **index.html** and **ui.js**.
 ```
 mkdir app
 vi app/index.html
@@ -228,11 +238,11 @@ function updateUI(data, endpoint) {
 See the URL below:
 > https://learn.microsoft.com/ja-jp/azure/active-directory/develop/scenario-spa-app-registration
 
-Enter "**http://localhost:3000**" in the Redirect URL. Retrieve some parameters such as clientId, tenantId after registrations for the next step.
+Enter "**http://localhost:3000**" in the Redirect URL Box. Retrieve some parameters such as clientId, tenantId after registrations for the next step.
 
 # 5. Configure SPA
 - Define clientId, tenamtID and redirectURL in authConfig.js.
-- Define the scopes granted by users, such as User.Read or Mail.Read etc.
+- Define the scopes granted by users, such as **User.Read** or **Mail.Read** etc.
 ```
 vi app/authConfig.js
 ```
@@ -247,9 +257,9 @@ const msalConfig = {
         // 'Application (client) ID' of app registration in Azure portal - this value is a GUID
         clientId: "Enter_the_Application_Id_Here",
         // Full directory URL, in the form of https://login.microsoftonline.com/<tenant-id>
-        authority: "Enter_the_Cloud_Instance_Id_HereEnter_the_Tenant_Info_Here",
+        authority: "https://login.microsoftonline.com/<tenant-id>",
         // Full redirect URL, in form of http://localhost:3000
-        redirectUri: "Enter_the_Redirect_Uri_Here",
+        redirectUri: "http://localhost:3000",
     },
     cache: {
         cacheLocation: "sessionStorage", // This configures where your cache will be stored
@@ -300,8 +310,7 @@ const tokenRequest = {
 };
 ```
 ```
-cd app
-vi graphConfig.js
+vi app/graphConfig.js
 ```
 ```
 // Add here the endpoints for MS Graph API services you would like to use.
