@@ -1,6 +1,6 @@
 # JavaScriptSPA
 
-![diagram-01-auth-code-flow.png](https://learn.microsoft.com/ja-jp/azure/active-directory/develop/media/tutorial-v2-javascript-auth-code/diagram-01-auth-code-flow.png)
+<img src="https://learn.microsoft.com/ja-jp/azure/active-directory/develop/media/tutorial-v2-javascript-auth-code/diagram-01-auth-code-flow.png" width="640">
 
 # 0. How it works
 When a user selects the Sign In button for the first time, the signIn method calls loginPopup to sign in the user. The loginPopup method opens a pop-up window with the Microsoft identity platform endpoint to prompt and validate the user's credentials. After a successful sign-in, msal.js initiates the authorization code flow.
