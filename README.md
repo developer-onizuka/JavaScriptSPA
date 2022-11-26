@@ -545,7 +545,7 @@ function readMail() {
 }
 ```
 
-# 8. Call Graph API
+# 8. Call the MS Graph API
 
 ```
 cd app
@@ -574,4 +574,17 @@ function callMSGraph(endpoint, token, callback) {
         .then(response => callback(response, endpoint))
         .catch(error => console.log(error));
 }
+```
+
+# 9. Start your first SPA application
+```
+$ npm start
+
+> JavaScriptSPA@1.0.0 start /home/vagrant/JavaScriptSPA
+> node server.js
+```
+
+# 10. Sign in to the application
+```
+google-chrome-stable http://localhost:3000
 ```
