@@ -2,6 +2,13 @@
 
 ![diagram-01-auth-code-flow.png](https://learn.microsoft.com/ja-jp/azure/active-directory/develop/media/tutorial-v2-javascript-auth-code/diagram-01-auth-code-flow.png)
 
+# 0. How it works
+When a user selects the Sign In button for the first time, the signIn method calls loginPopup to sign in the user. The loginPopup method opens a pop-up window with the Microsoft identity platform endpoint to prompt and validate the user's credentials. After a successful sign-in, msal.js initiates the authorization code flow.
+
+At this point, a PKCE-protected authorization code is sent to the CORS-protected token endpoint and is exchanged for tokens. An ID token, access token, and refresh token are received by your application and processed by msal.js, and the information contained in the tokens is cached.
+
+The ID token contains basic information about the user, like their display name. If you plan to use any data provided by the ID token, your back-end server must validate it to guarantee the token was issued to a valid user for your application.
+
 # 1. Install npm and some libraries
 ```
 sudo apt install -y npm
