@@ -216,7 +216,7 @@ function updateUI(data, endpoint) {
 See the URL below:
 > https://learn.microsoft.com/ja-jp/azure/active-directory/develop/scenario-spa-app-registration
 
-Enter "**http://localhost:3000**" in the Redirect URL.
+Enter "**http://localhost:3000**" in the Redirect URL. Retrieve some parameters such as clientId, tenantId after registrations for the next step.
 
 # 5. Configure SPA
 - Define clientId, tenamtID and redirectURL in authConfig.js.
