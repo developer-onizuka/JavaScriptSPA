@@ -43,7 +43,7 @@ console.log(`Listening on port ${port}...`);
 ```
 
 # 3. Create UI
-
+Create two files, **index.html and ui.js**.
 ```
 mkdir app
 cd app
@@ -138,6 +138,7 @@ vi index.html
 ```
 vi ui.js
 ```
+```
 // Select DOM elements to work with
 const welcomeDiv = document.getElementById("WelcomeMessage");
 const signInButton = document.getElementById("SignIn");
@@ -208,8 +209,6 @@ function updateUI(data, endpoint) {
         }
     }
 }
-```
-
 ```
 
 
