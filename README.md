@@ -1,5 +1,5 @@
 # JavaScriptSPA
-Calls Microsoft Graph by using **the OAuth 2.0 authorization code flow with PKCE**. MSAL.js 2.0 improves on MSAL.js 1.0 by supporting the authorization code flow in the browser instead of the implicit grant flow. MSAL.js 2.0 does NOT support the implicit flow.<br>
+Calls Microsoft Graph by using **the OAuth 2.0 authorization code flow with PKCE**. MSAL.js 2.0 improves on MSAL.js 1.0 by supporting the authorization code flow in the browser instead of the implicit grant flow. MSAL.js 2.0 does NOT support the implicit flow.<br><br>
 <img src="https://learn.microsoft.com/ja-jp/azure/active-directory/develop/media/tutorial-v2-javascript-auth-code/diagram-01-auth-code-flow.png" width="720">
 
 # 0. How it works
