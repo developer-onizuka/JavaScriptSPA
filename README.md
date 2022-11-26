@@ -588,3 +588,5 @@ $ npm start
 ```
 google-chrome-stable http://localhost:3000
 ```
+![SPA1.png](https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA1.png) <br>
+![SPA2.png](https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA2.png)
