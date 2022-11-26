@@ -1,5 +1,5 @@
 # JavaScriptSPA
-
+Calls Microsoft Graph by using **the OAuth 2.0 authorization code flow with PKCE**. MSAL.js 2.0 improves on MSAL.js 1.0 by supporting the authorization code flow in the browser instead of the implicit grant flow. MSAL.js 2.0 does NOT support the implicit flow.<br>
 <img src="https://learn.microsoft.com/ja-jp/azure/active-directory/develop/media/tutorial-v2-javascript-auth-code/diagram-01-auth-code-flow.png" width="720">
 
 # 0. How it works
@@ -11,6 +11,10 @@ The ID token contains basic information about the user, like their display name.
 
 # 1. Install npm and some libraries
 ```
+mkdir JavaScriptSPA
+cd JavaScriptSPA
+```
+```
 sudo apt install -y npm
 npm init -y
 npm install @azure/msal-browser
@@ -20,6 +24,9 @@ npm install yargs
 ```
 
 # 2. Create server.js
+```
+vi JavaScript/server.js
+```
 ```
 const express = require('express');
 const morgan = require('morgan');
@@ -53,8 +60,7 @@ console.log(`Listening on port ${port}...`);
 Create two files, **index.html and ui.js**.
 ```
 mkdir app
-cd app
-vi index.html
+vi app/index.html
 ```
 ```
 <!DOCTYPE html>
@@ -143,8 +149,7 @@ vi index.html
 </html>
 ```
 ```
-cd app
-vi ui.js
+vi app/ui.js
 ```
 ```
 // Select DOM elements to work with
@@ -229,8 +234,7 @@ Enter "**http://localhost:3000**" in the Redirect URL. Retrieve some parameters 
 - Define clientId, tenamtID and redirectURL in authConfig.js.
 - Define the scopes granted by users, such as User.Read or Mail.Read etc.
 ```
-cd app
-vi authConfig.js
+vi app/authConfig.js
 ```
 ```
 /**
@@ -309,8 +313,7 @@ const graphConfig = {
 
 # 6. Popup
 ```
-cd app
-vi authPopup.js
+vi app/authPopup.js
 ```
 ```
 // Create the main myMSALObj instance
@@ -432,8 +435,7 @@ selectAccount();
 
 # 7. Redirect
 ```
-cd app
-vi authRedirect.js
+vi app/authRedirect.js
 ```
 ```
 // Create the main myMSALObj instance
@@ -548,8 +550,7 @@ function readMail() {
 # 8. Call the MS Graph API
 
 ```
-cd app
-vi graph.js
+vi app/graph.js
 ```
 ```
 /** 
