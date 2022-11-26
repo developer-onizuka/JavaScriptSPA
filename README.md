@@ -211,4 +211,9 @@ function updateUI(data, endpoint) {
 }
 ```
 
+# 4. App registrations
+> https://learn.microsoft.com/ja-jp/azure/active-directory/develop/scenario-spa-app-registration
+
+Enter "**http://localhost:3000**" in the Redirect URL.
+
 
