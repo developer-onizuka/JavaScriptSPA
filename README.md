@@ -1,6 +1,6 @@
 # JavaScriptSPA
 
-<img src="https://learn.microsoft.com/ja-jp/azure/active-directory/develop/media/tutorial-v2-javascript-auth-code/diagram-01-auth-code-flow.png" width="640">
+<img src="https://learn.microsoft.com/ja-jp/azure/active-directory/develop/media/tutorial-v2-javascript-auth-code/diagram-01-auth-code-flow.png" width="720">
 
 # 0. How it works
 When a user selects the Sign In button for the first time, the signIn method calls loginPopup to sign in the user. The loginPopup method opens a pop-up window with the Microsoft identity platform endpoint to prompt and validate the user's credentials. After a successful sign-in, msal.js initiates the authorization code flow.
@@ -588,9 +588,9 @@ $ npm start
 ```
 google-chrome-stable http://localhost:3000
 ```
-![SPA1.png](https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA1.png) <br>
+<img src="https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA1.png" width="640"> <br>
 
 If you consent to the requested permissions, the web applications displays your user name, signifying a successful login:
-![SPA2.png](https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA2.png)
+<img src="https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA2.png" width="640">
 
 After you sign in, select See Profile to view the user profile information returned in the response from the call to the Microsoft Graph API.
