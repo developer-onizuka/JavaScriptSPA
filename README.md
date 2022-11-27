@@ -600,7 +600,7 @@ google-chrome-stable http://localhost:3000
 ```
 <img src="https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA1.png" width="640"> <br>
 
-If you consent to the requested permissions, the web applications displays your user name, signifying a successful login:
+If you consent to the requested permissions, the web applications displays your user name, signifying a successful login:<br>
 <img src="https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA2.png" width="640">
 
 After you sign in, select See Profile to view the user profile information returned in the response from the call to the Microsoft Graph API.
