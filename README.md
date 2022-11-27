@@ -604,3 +604,12 @@ If you consent to the requested permissions, the web applications displays your 
 <img src="https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA2.png" width="640">
 
 After you sign in, select See Profile to view the user profile information returned in the response from the call to the Microsoft Graph API.
+
+
+# 11. My apps
+> https://myapps.microsoft.com/
+
+You can add the application into your catalog. If it is not visible in catalog, then make "visible user" in Properties enable.<br>
+If this option is set to yes, then assigned users will see the application on My Apps and O365 app launcher. If this option is set to no, then no users will see this application on their My Apps and O365 launcher.<br>
+
+<img src="https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA3.png" width="640"> <br>
