@@ -612,4 +612,5 @@ After you sign in, select See Profile to view the user profile information retur
 You can add the application into your catalog. If it is not visible in catalog, then make "visible user" in Properties enable.<br>
 If this option is set to yes, then assigned users will see the application on My Apps and O365 app launcher. If this option is set to no, then no users will see this application on their My Apps and O365 launcher.<br>
 
+You also edit the **Terms of service URL** as like below:<br>
 <img src="https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA3.png" width="640"> <br>
