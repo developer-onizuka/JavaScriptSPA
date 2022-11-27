@@ -154,6 +154,7 @@ vi app/index.html
   <!-- uncomment the above line and comment the line below if you would like to use the redirect flow -->
   <script type="text/javascript" src="./authPopup.js"></script>
   <script type="text/javascript" src="./graph.js"></script>
+  <script type="text/javascript" src="./direct.js"></script>
 </body>
 
 </html>
@@ -584,6 +585,11 @@ function callMSGraph(endpoint, token, callback) {
         .then(response => callback(response, endpoint))
         .catch(error => console.log(error));
 }
+```
+```
+cat <<EOF > direct.js 
+signIn();
+EOF
 ```
 
 # 9. Start your first SPA application
