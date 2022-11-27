@@ -614,3 +614,7 @@ If this option is set to yes, then assigned users will see the application on My
 
 You also edit the **Home page URL** as like below:<br>
 <img src="https://github.com/developer-onizuka/JavaScriptSPA/blob/main/SPA3.png" width="640"> <br>
+
+```
+google-chrome-stable https://myapps.microsoft.com/
+```
