@@ -159,6 +159,18 @@ vi app/index.html
 
 </html>
 ```
+
+As you see index.html, we're gonna create seven js files.
+```
+- app/authConfig.js
+- app/graphConfig.js
+- app/ui.js
+- app/authRedirect.js
+- app/authPopup.js
+- app/graph.js
+- app/direct.js
+```
+
 ```
 vi app/ui.js
 ```
